@@ -65,6 +65,8 @@
     "version": 2,
     "type": "addon",
     "main": "addon-main.cjs",
-    "app-js": {}
+    "app-js": {
+      "./components/button.js": "./dist/_app_/components/button.js"
+    }
   }
 }

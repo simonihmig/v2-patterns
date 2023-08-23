@@ -1,0 +1,6 @@
+.btn {
+  border: solid 1px #ccc;
+  border-radius: 2px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
