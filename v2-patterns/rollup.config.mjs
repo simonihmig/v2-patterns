@@ -48,6 +48,8 @@ export default {
     // to leave alone and keep in the published output.
     addon.keepAssets(['**/*.css', '**/*.webp']),
 
+    // addon.publicAssets('src/assets/public'),
+
     // Remove leftover build artifacts when starting a new build.
     addon.clean(),
 

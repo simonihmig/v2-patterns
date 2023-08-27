@@ -68,6 +68,9 @@
     "app-js": {
       "./components/button.js": "./dist/_app_/components/button.js",
       "./components/tomster.js": "./dist/_app_/components/tomster.js"
+    },
+    "public-assets": {
+      "./src/assets/public/favicon.ico": "/favicon.ico"
     }
   }
 }
