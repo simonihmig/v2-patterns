@@ -6,6 +6,16 @@ module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     autoImport: {
       watchDependencies: ['v2-patterns'],
+      webpack: {
+        module: {
+          rules: [
+            {
+              test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+              type: 'asset/resource',
+            },
+          ],
+        },
+      },
     },
   });
 
