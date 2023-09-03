@@ -1,5 +1,5 @@
 {
-  "name": "v2-patterns",
+  "name": "@v2-patterns/addon",
   "version": "0.0.0",
   "description": "The default blueprint for Embroider v2 addons.",
   "keywords": [

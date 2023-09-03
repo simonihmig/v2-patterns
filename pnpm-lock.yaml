@@ -17,6 +17,82 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2(prettier@3.0.2)
 
+  packages/addon:
+    dependencies:
+      '@embroider/addon-shim':
+        specifier: ^1.8.6
+        version: 1.8.6
+      ember-modifier:
+        specifier: ^4.1.0
+        version: 4.1.0(ember-source@5.2.0)
+      ember-resources:
+        specifier: ^6.4.0
+        version: 6.4.0(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.1.0)(ember-source@5.2.0)
+      three:
+        specifier: ^0.156.0
+        version: 0.156.0
+    devDependencies:
+      '@babel/core':
+        specifier: ^7.22.10
+        version: 7.22.10
+      '@babel/eslint-parser':
+        specifier: ^7.22.10
+        version: 7.22.10(@babel/core@7.22.10)(eslint@8.47.0)
+      '@babel/plugin-proposal-class-properties':
+        specifier: ^7.18.6
+        version: 7.18.6(@babel/core@7.22.10)
+      '@babel/plugin-proposal-decorators':
+        specifier: ^7.22.10
+        version: 7.22.10(@babel/core@7.22.10)
+      '@babel/plugin-transform-class-static-block':
+        specifier: ^7.22.5
+        version: 7.22.5(@babel/core@7.22.10)
+      '@babel/runtime':
+        specifier: ^7.22.10
+        version: 7.22.10
+      '@embroider/addon-dev':
+        specifier: ^4.1.0
+        version: 4.1.0(@glint/template@1.1.0)(rollup@3.28.1)
+      '@rollup/plugin-babel':
+        specifier: ^6.0.3
+        version: 6.0.3(@babel/core@7.22.10)(rollup@3.28.1)
+      babel-plugin-ember-template-compilation:
+        specifier: ^2.2.0
+        version: 2.2.0
+      concurrently:
+        specifier: ^8.2.1
+        version: 8.2.1
+      ember-template-lint:
+        specifier: ^5.11.2
+        version: 5.11.2
+      eslint:
+        specifier: ^8.47.0
+        version: 8.47.0
+      eslint-config-prettier:
+        specifier: ^8.10.0
+        version: 8.10.0(eslint@8.47.0)
+      eslint-plugin-ember:
+        specifier: ^11.11.1
+        version: 11.11.1(eslint@8.47.0)
+      eslint-plugin-n:
+        specifier: ^16.0.2
+        version: 16.0.2(eslint@8.47.0)
+      eslint-plugin-prettier:
+        specifier: ^4.2.1
+        version: 4.2.1(eslint-config-prettier@8.10.0)(eslint@8.47.0)(prettier@3.0.2)
+      prettier:
+        specifier: ^3.0.2
+        version: 3.0.2
+      prettier-plugin-ember-template-tag:
+        specifier: ^1.0.2
+        version: 1.0.2(prettier@3.0.2)
+      rollup:
+        specifier: ^3.28.1
+        version: 3.28.1
+      rollup-plugin-copy:
+        specifier: ^3.4.0
+        version: 3.4.0
+
   test-app:
     devDependencies:
       '@babel/eslint-parser':
@@ -43,6 +119,9 @@ importers:
       '@glimmer/tracking':
         specifier: ^1.1.2
         version: 1.1.2
+      '@v2-patterns/addon':
+        specifier: workspace:*
+        version: link:../packages/addon
       broccoli-asset-rev:
         specifier: ^3.0.0
         version: 3.0.0
@@ -157,88 +236,9 @@ importers:
       tracked-built-ins:
         specifier: ^3.1.1
         version: 3.1.1
-      v2-patterns:
-        specifier: workspace:*
-        version: link:../v2-patterns
       webpack:
         specifier: ^5.88.2
         version: 5.88.2
-
-  v2-patterns:
-    dependencies:
-      '@embroider/addon-shim':
-        specifier: ^1.8.6
-        version: 1.8.6
-      ember-modifier:
-        specifier: ^4.1.0
-        version: 4.1.0(ember-source@5.2.0)
-      ember-resources:
-        specifier: ^6.4.0
-        version: 6.4.0(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.1.0)(ember-source@5.2.0)
-      three:
-        specifier: ^0.156.0
-        version: 0.156.0
-    devDependencies:
-      '@babel/core':
-        specifier: ^7.22.10
-        version: 7.22.10
-      '@babel/eslint-parser':
-        specifier: ^7.22.10
-        version: 7.22.10(@babel/core@7.22.10)(eslint@8.47.0)
-      '@babel/plugin-proposal-class-properties':
-        specifier: ^7.18.6
-        version: 7.18.6(@babel/core@7.22.10)
-      '@babel/plugin-proposal-decorators':
-        specifier: ^7.22.10
-        version: 7.22.10(@babel/core@7.22.10)
-      '@babel/plugin-transform-class-static-block':
-        specifier: ^7.22.5
-        version: 7.22.5(@babel/core@7.22.10)
-      '@babel/runtime':
-        specifier: ^7.22.10
-        version: 7.22.10
-      '@embroider/addon-dev':
-        specifier: ^4.1.0
-        version: 4.1.0(@glint/template@1.1.0)(rollup@3.28.1)
-      '@rollup/plugin-babel':
-        specifier: ^6.0.3
-        version: 6.0.3(@babel/core@7.22.10)(rollup@3.28.1)
-      babel-plugin-ember-template-compilation:
-        specifier: ^2.2.0
-        version: 2.2.0
-      concurrently:
-        specifier: ^8.2.1
-        version: 8.2.1
-      ember-template-lint:
-        specifier: ^5.11.2
-        version: 5.11.2
-      eslint:
-        specifier: ^8.47.0
-        version: 8.47.0
-      eslint-config-prettier:
-        specifier: ^8.10.0
-        version: 8.10.0(eslint@8.47.0)
-      eslint-plugin-ember:
-        specifier: ^11.11.1
-        version: 11.11.1(eslint@8.47.0)
-      eslint-plugin-n:
-        specifier: ^16.0.2
-        version: 16.0.2(eslint@8.47.0)
-      eslint-plugin-prettier:
-        specifier: ^4.2.1
-        version: 4.2.1(eslint-config-prettier@8.10.0)(eslint@8.47.0)(prettier@3.0.2)
-      prettier:
-        specifier: ^3.0.2
-        version: 3.0.2
-      prettier-plugin-ember-template-tag:
-        specifier: ^1.0.2
-        version: 1.0.2(prettier@3.0.2)
-      rollup:
-        specifier: ^3.28.1
-        version: 3.28.1
-      rollup-plugin-copy:
-        specifier: ^3.4.0
-        version: 3.4.0
 
 packages:
 
@@ -2450,7 +2450,7 @@ packages:
   /@types/cors@2.8.13:
     resolution: {integrity: sha512-RG8AStHlUiV5ysZQKq97copd2UmVYw3/pRMLefISZ3S1hK104Cwm7iLQ3fTKx+lsUH2CE8FlLaYeEA2LSeqYUA==}
     dependencies:
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
     dev: true
 
   /@types/eslint-scope@3.7.4:
@@ -2489,7 +2489,7 @@ packages:
   /@types/fs-extra@5.1.0:
     resolution: {integrity: sha512-AInn5+UBFIK9FK5xc9yP5e3TQSPNNgjHByqYcj9g5elVBnDQcQL7PlO1CIRy2gWlbwK7UPYqi7vRvFA44dCmYQ==}
     dependencies:
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
 
   /@types/fs-extra@8.1.2:
     resolution: {integrity: sha512-SvSrYXfWSc7R4eqnOzbQF4TZmfpNSM9FrSWLU3EUnWBuyZqNBOrv1B1JA3byUDPUl9z4Ab3jeZG2eDdySlgNMg==}
@@ -2501,14 +2501,14 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
     dev: true
 
   /@types/glob@8.1.0:
     resolution: {integrity: sha512-IO+MJPVhoqz+28h1qLAcBEH2+xHMK6MTyHJc7MTnnYb6wsoLR29POVGJ7LycmVXIqyy/4/2ShP5sUwTXuOwb/w==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
 
   /@types/http-errors@2.0.1:
     resolution: {integrity: sha512-/K3ds8TRAfBvi5vfjuz8y6+GiAYBZ0x4tXv1Av6CWBWn0IlADc+ZX9pMq7oU0fNQPnBwIZl3rmeLp6SBApbxSQ==}
@@ -2520,7 +2520,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
     dev: true
 
   /@types/mime@1.3.2:
@@ -2546,7 +2546,6 @@ packages:
 
   /@types/node@20.5.4:
     resolution: {integrity: sha512-Y9vbIAoM31djQZrPYjpTLo0XlaSwOIsrlfE3LpulZeRblttsLQRFRlBAppW0LOxyT3ALj2M5vU1ucQQayQH3jA==}
-    dev: true
 
   /@types/node@9.6.61:
     resolution: {integrity: sha512-/aKAdg5c8n468cYLy2eQrcR5k6chlbNwZNGUj3TboyPa2hcO2QAJcfymlqPzMiRj8B6nYKXjzQz36minFE0RwQ==}
@@ -2567,14 +2566,14 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
     dev: true
 
   /@types/rimraf@2.0.5:
     resolution: {integrity: sha512-YyP+VfeaqAyFmXoTh3HChxOQMyjByRMsHU7kc5KOJkSlXudhMhQIALbYV7rHh/l8d2lX3VUQzprrcAgWdRuU8g==}
     dependencies:
       '@types/glob': 8.1.0
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
 
   /@types/send@0.17.1:
     resolution: {integrity: sha512-Cwo8LE/0rnvX7kIIa3QHCkcuF21c05Ayb0ZfxPiv0W8VRiZiNW/WuRupHKpqqGVGf7SUA44QSOUKaEd9lIrd/Q==}
@@ -6112,7 +6111,7 @@ packages:
     dependencies:
       '@types/cookie': 0.4.1
       '@types/cors': 2.8.13
-      '@types/node': 20.5.3
+      '@types/node': 20.5.4
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.4.2
