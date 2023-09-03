@@ -31,7 +31,10 @@
     "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
   },
   "dependencies": {
-    "@embroider/addon-shim": "^1.8.6"
+    "@embroider/addon-shim": "^1.8.6",
+    "ember-modifier": "^4.1.0",
+    "ember-resources": "^6.4.0",
+    "three": "^0.156.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
@@ -67,6 +70,8 @@
     "main": "addon-main.cjs",
     "app-js": {
       "./components/button.js": "./dist/_app_/components/button.js",
+      "./components/lazy-component.js": "./dist/_app_/components/lazy-component.js",
+      "./components/lazy-dynamic-import.js": "./dist/_app_/components/lazy-dynamic-import.js",
       "./components/tomster.js": "./dist/_app_/components/tomster.js"
     },
     "public-assets": {

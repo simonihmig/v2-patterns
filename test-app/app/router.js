@@ -6,4 +6,9 @@ export default class Router extends EmberRouter {
   rootURL = config.rootURL;
 }
 
-Router.map(function () {});
+Router.map(function () {
+  this.route('css');
+  this.route('assets');
+  this.route('lazy-dynamic-import');
+  this.route('lazy-component');
+});
