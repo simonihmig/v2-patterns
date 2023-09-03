@@ -26,8 +26,12 @@ module.exports = function (defaults) {
         module: {
           rules: [
             {
-              test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+              test: /\.(svg|jpg|jpeg|gif|webp)$/i,
               type: 'asset/resource',
+            },
+            {
+              test: /\.(png)$/i,
+              use: '@v2-patterns/webpack',
             },
           ],
         },
