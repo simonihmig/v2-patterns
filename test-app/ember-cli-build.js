@@ -19,6 +19,19 @@ module.exports = function (defaults) {
     },
   });
 
-  const { maybeEmbroider } = require('@embroider/test-setup');
-  return maybeEmbroider(app);
+  const { Webpack } = require('@embroider/webpack');
+  return require('@embroider/compat').compatBuild(app, Webpack, {
+    packagerOptions: {
+      webpackConfig: {
+        module: {
+          rules: [
+            {
+              test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+              type: 'asset/resource',
+            },
+          ],
+        },
+      },
+    },
+  });
 };

@@ -23,5 +23,8 @@
     "overrides": {
       "@types/eslint": "^7.0.0"
     }
+  },
+  "volta": {
+    "node": "18.17.1"
   }
 }

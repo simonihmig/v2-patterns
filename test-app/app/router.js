@@ -11,4 +11,5 @@ Router.map(function () {
   this.route('assets');
   this.route('lazy-dynamic-import');
   this.route('lazy-component');
+  this.route('webpack');
 });

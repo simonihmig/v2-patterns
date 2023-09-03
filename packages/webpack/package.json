@@ -1,0 +1,40 @@
+{
+  "name": "@v2-patterns/webpack",
+  "version": "0.0.0",
+  "description": "webpack loader example",
+  "repository": "",
+  "license": "MIT",
+  "author": "Simon Ihmig <ihmig@kaliber5.de>",
+  "files": [
+    "dist"
+  ],
+  "main": "./index.js",
+  "scripts": {
+    "lint": "concurrently 'npm:lint:*(!fix)' --names 'lint:'",
+    "lint:fix": "concurrently 'npm:lint:*:fix' --names 'fix:'",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "test": "echo 'No tests yet'"
+  },
+  "dependencies": {
+    "loader-utils": "^3.2.1",
+    "sharp": "^0.31.1"
+  },
+  "peerDependencies": {
+    "webpack": "^5.70.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.2",
+    "webpack": "^5.88.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
