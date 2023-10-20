@@ -1,25 +1,8 @@
-# v2-patterns
+# Advanced patterns for v2 addons
 
-[Short description of the addon.]
-
-## Compatibility
-
-- Ember.js v4.8 or above
-- Embroider or ember-auto-import v2
-
-## Installation
-
-```
-ember install v2-patterns
-```
-
-## Usage
-
-[Longer description of how to use the addon in apps.]
-
-## Contributing
-
-See the [Contributing](CONTRIBUTING.md) guide for details.
+This repo contains the code examples as they were featured in my EmberFest 2023 talk on "Advanced patterns for v2 addons":
+* [Youtube](https://www.youtube.com/watch?v=rhnA01Hwdqw&list=PLN4SpDLOSVkRSMIpu4UiK1k4hZwHrwCOT&index=2)
+* [Slides](https://docs.google.com/presentation/d/1dCBGkFAhKYS1-efrZBLo7IsMk8od4wXwfzoGfqMRYYc/edit)
 
 ## License
 
